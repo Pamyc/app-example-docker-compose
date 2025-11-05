@@ -20,7 +20,7 @@ app = FastAPI(lifespan=lifespan)
 
 @app.get("/")
 async def root():
-    return {"status": "ok"}
+    return {"status": "ok123"}
 
 @app.get("/dog/{id}")
 async def get_a_dog(id: str, dog_repo: DogRepository = Depends(get_dog_repository)) -> Dog:
